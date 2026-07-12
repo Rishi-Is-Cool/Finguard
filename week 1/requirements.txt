@@ -1,0 +1,14 @@
+langchain==0.3.7
+langchain-community==0.3.7
+langchain-groq==0.2.1
+langchain-experimental==0.3.3
+langchain-core==0.3.19
+chromadb==0.5.18
+sentence-transformers==3.3.1
+rank-bm25==0.2.2
+ragas==0.2.6
+datasets==3.1.0
+streamlit==1.40.2
+pdfplumber==0.11.4
+pandas==2.2.3
+python-dotenv==1.0.1

@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+**/.venv/
+**/venv/
+
+# Environment variables
+.env
+**/.env
+
+# VS Code
+.vscode/
+
+# SQLite
+*.db
+*.sqlite3
+
+# Chroma
+chroma_db/
+
+# Streamlit
+.streamlit/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

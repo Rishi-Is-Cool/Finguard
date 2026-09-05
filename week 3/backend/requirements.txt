@@ -1,0 +1,29 @@
+# FinGuard AI — Week 3 backend
+# Python 3.11 recommended (matches the Week 2 venv).
+
+# ── API ───────────────────────────────────────────────────────────────────────
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+python-multipart==0.0.20      # required by FastAPI for UploadFile / File(...)
+
+# ── LangChain / RAG stack (same pins as Weeks 1–2) ────────────────────────────
+langchain==0.3.7
+langchain-community==0.3.7
+langchain-core==0.3.19
+langchain-groq==0.2.1
+chromadb==0.5.18
+sentence-transformers==3.3.1
+rank-bm25==0.2.2
+
+# ── Data ──────────────────────────────────────────────────────────────────────
+pandas==2.2.3
+python-dotenv==1.0.1
+pydantic==2.10.3
+
+# ── Optional: serving the fine-tuned model locally (Day 18) ──────────────────
+# Only needed when FINGUARD_MODEL_NAME is set. Without these the backend
+# falls back to Groq automatically.
+# transformers==4.46.3
+# torch==2.5.1
+# peft==0.13.2
+# accelerate==1.1.1

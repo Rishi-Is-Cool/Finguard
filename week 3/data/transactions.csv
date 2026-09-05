@@ -1,0 +1,201 @@
+date,time,account,beneficiary,description,amount,type
+2024-03-22,02:01,ACC001,Priya Ltd,EMI debit,49800,debit
+2024-03-27,22:57,ACC002,Raj Kumar,NEFT transfer,39698,debit
+2024-01-28,03:32,ACC001,Sneha Traders,Online purchase,37781,debit
+2024-02-27,15:17,ACC001,FastCash,ATM withdrawal,49500,credit
+2024-01-20,03:48,ACC002,Raj Kumar,ATM withdrawal,7078,credit
+2024-03-18,11:51,ACC003,Raj Kumar,Online purchase,31108,debit
+2024-03-11,11:53,ACC003,Priya Ltd,EMI debit,24700,debit
+2024-01-06,22:14,ACC001,Raj Kumar,Online purchase,49500,credit
+2024-02-28,22:53,ACC002,Priya Ltd,EMI debit,25260,credit
+2024-03-30,22:41,ACC003,Priya Ltd,UPI payment,12215,credit
+2024-02-18,11:59,ACC001,Unknown Co,NEFT transfer,37500,debit
+2024-01-05,23:20,ACC001,Sneha Traders,EMI debit,5337,credit
+2024-01-28,22:31,ACC001,Unknown Co,UPI payment,31071,debit
+2024-03-12,15:16,ACC003,FastCash,ATM withdrawal,49000,debit
+2024-01-18,15:31,ACC001,Priya Ltd,EMI debit,4087,debit
+2024-03-28,14:38,ACC003,FastCash,Salary credit,26009,credit
+2024-03-11,23:00,ACC003,Sneha Traders,ATM withdrawal,8507,credit
+2024-01-15,11:27,ACC003,Unknown Co,Salary credit,1212,debit
+2024-03-05,02:55,ACC003,Priya Ltd,UPI payment,34270,credit
+2024-01-21,15:49,ACC003,Unknown Co,Online purchase,100299,debit
+2024-01-15,11:56,ACC001,Raj Kumar,UPI payment,261225,debit
+2024-01-11,22:31,ACC001,Priya Ltd,EMI debit,48500,credit
+2024-03-11,03:16,ACC001,Sneha Traders,EMI debit,28730,debit
+2024-02-09,14:42,ACC003,FastCash,NEFT transfer,29711,debit
+2024-01-29,02:21,ACC001,Sneha Traders,UPI payment,37301,debit
+2024-01-10,22:40,ACC001,Unknown Co,NEFT transfer,5417,debit
+2024-02-05,22:31,ACC003,Sneha Traders,Salary credit,9671,credit
+2024-02-01,23:30,ACC001,Raj Kumar,EMI debit,49800,credit
+2024-02-15,14:26,ACC003,Raj Kumar,NEFT transfer,4550,credit
+2024-02-13,23:55,ACC001,Sneha Traders,Online purchase,13556,debit
+2024-02-24,03:17,ACC002,Sneha Traders,NEFT transfer,5940,debit
+2024-03-24,15:53,ACC001,Priya Ltd,Online purchase,7112,credit
+2024-03-02,03:55,ACC001,FastCash,NEFT transfer,4842,credit
+2024-02-03,23:50,ACC003,Sneha Traders,EMI debit,28722,credit
+2024-01-20,03:18,ACC003,Sneha Traders,NEFT transfer,4832,credit
+2024-01-08,02:37,ACC001,Raj Kumar,Salary credit,35807,debit
+2024-01-24,02:38,ACC002,Raj Kumar,Salary credit,16414,debit
+2024-03-15,15:02,ACC003,Sneha Traders,Salary credit,28474,credit
+2024-02-03,03:42,ACC002,FastCash,UPI payment,49800,credit
+2024-02-28,11:59,ACC001,FastCash,Salary credit,49500,debit
+2024-01-10,15:13,ACC002,Raj Kumar,UPI payment,9680,credit
+2024-02-06,03:28,ACC003,Sneha Traders,NEFT transfer,49900,credit
+2024-03-25,02:56,ACC001,Sneha Traders,UPI payment,8564,credit
+2024-02-06,15:13,ACC003,Unknown Co,Salary credit,49800,credit
+2024-02-02,23:03,ACC002,Raj Kumar,NEFT transfer,28759,credit
+2024-01-17,22:16,ACC003,FastCash,Salary credit,29956,debit
+2024-01-15,02:56,ACC003,Raj Kumar,ATM withdrawal,10768,debit
+2024-02-25,03:02,ACC002,Priya Ltd,EMI debit,3614,debit
+2024-03-26,02:22,ACC003,Priya Ltd,UPI payment,49000,debit
+2024-01-23,14:01,ACC002,Priya Ltd,ATM withdrawal,22770,debit
+2024-03-30,02:24,ACC001,Priya Ltd,Online purchase,49000,credit
+2024-02-09,23:50,ACC001,Priya Ltd,Online purchase,49800,credit
+2024-02-05,23:04,ACC002,Sneha Traders,Online purchase,246341,credit
+2024-01-04,02:56,ACC003,Unknown Co,NEFT transfer,193620,debit
+2024-03-17,14:22,ACC002,Sneha Traders,Salary credit,49900,debit
+2024-02-19,15:12,ACC001,Sneha Traders,Salary credit,29577,debit
+2024-02-16,14:04,ACC003,Unknown Co,EMI debit,273119,debit
+2024-02-08,15:19,ACC002,Unknown Co,Salary credit,22376,debit
+2024-01-25,14:42,ACC003,Priya Ltd,Salary credit,455109,credit
+2024-02-21,15:53,ACC001,FastCash,Salary credit,19803,credit
+2024-02-29,14:28,ACC002,Priya Ltd,EMI debit,34500,debit
+2024-02-06,15:42,ACC001,Priya Ltd,EMI debit,22966,credit
+2024-01-29,23:12,ACC001,FastCash,Salary credit,4028,debit
+2024-02-28,14:56,ACC003,FastCash,Online purchase,13742,credit
+2024-02-01,03:41,ACC002,Priya Ltd,UPI payment,7985,credit
+2024-01-07,15:15,ACC002,Priya Ltd,Online purchase,163626,credit
+2024-02-26,15:52,ACC002,Sneha Traders,Online purchase,48500,debit
+2024-03-01,14:16,ACC003,FastCash,EMI debit,49900,debit
+2024-02-05,14:04,ACC002,Unknown Co,ATM withdrawal,49800,debit
+2024-01-18,03:14,ACC003,Priya Ltd,NEFT transfer,11014,credit
+2024-02-22,11:34,ACC001,FastCash,Online purchase,5080,debit
+2024-03-14,14:30,ACC002,FastCash,Online purchase,24052,debit
+2024-03-03,03:17,ACC002,Unknown Co,EMI debit,2902,credit
+2024-01-22,23:29,ACC003,Raj Kumar,Online purchase,426241,debit
+2024-01-11,22:27,ACC001,Raj Kumar,ATM withdrawal,31257,credit
+2024-02-11,03:29,ACC002,FastCash,ATM withdrawal,25846,debit
+2024-03-01,02:47,ACC001,Raj Kumar,EMI debit,23935,debit
+2024-01-04,03:12,ACC001,Priya Ltd,UPI payment,48500,credit
+2024-03-26,02:36,ACC003,Unknown Co,ATM withdrawal,343811,debit
+2024-03-18,15:47,ACC002,Raj Kumar,Salary credit,49800,debit
+2024-02-09,15:43,ACC002,Priya Ltd,NEFT transfer,296768,debit
+2024-01-14,22:49,ACC003,Raj Kumar,ATM withdrawal,8933,credit
+2024-03-25,11:04,ACC001,FastCash,Online purchase,23362,debit
+2024-02-25,11:40,ACC003,Priya Ltd,Online purchase,49000,debit
+2024-03-07,22:17,ACC002,FastCash,Online purchase,36269,credit
+2024-02-11,23:15,ACC002,FastCash,UPI payment,49500,credit
+2024-03-13,15:42,ACC002,Unknown Co,UPI payment,2880,credit
+2024-01-28,11:51,ACC003,Unknown Co,Salary credit,19327,debit
+2024-03-07,03:05,ACC002,Sneha Traders,UPI payment,27635,credit
+2024-03-23,22:31,ACC001,Unknown Co,UPI payment,2130,credit
+2024-03-29,03:19,ACC002,Sneha Traders,Salary credit,25184,credit
+2024-02-24,22:35,ACC002,Unknown Co,ATM withdrawal,30736,debit
+2024-01-16,22:12,ACC003,Priya Ltd,UPI payment,36118,debit
+2024-03-02,11:46,ACC003,Unknown Co,NEFT transfer,35382,debit
+2024-02-07,03:23,ACC003,Sneha Traders,UPI payment,1927,credit
+2024-01-06,02:35,ACC003,FastCash,NEFT transfer,9275,debit
+2024-03-14,11:30,ACC001,Raj Kumar,ATM withdrawal,23328,credit
+2024-01-15,23:04,ACC003,Raj Kumar,UPI payment,5855,debit
+2024-03-13,11:05,ACC003,FastCash,Salary credit,162102,debit
+2024-03-07,14:28,ACC003,FastCash,ATM withdrawal,255898,debit
+2024-03-19,22:06,ACC003,Priya Ltd,ATM withdrawal,208940,debit
+2024-01-21,03:11,ACC001,FastCash,Online purchase,11258,credit
+2024-02-07,02:14,ACC003,FastCash,NEFT transfer,19528,debit
+2024-02-03,23:50,ACC002,Raj Kumar,Salary credit,13964,debit
+2024-03-23,03:58,ACC001,Raj Kumar,UPI payment,10321,credit
+2024-03-17,22:52,ACC002,Raj Kumar,Online purchase,19914,credit
+2024-03-30,14:17,ACC002,Raj Kumar,Salary credit,33361,debit
+2024-02-25,22:20,ACC001,Priya Ltd,EMI debit,2695,debit
+2024-03-27,23:17,ACC002,Sneha Traders,EMI debit,12481,credit
+2024-02-05,03:37,ACC001,FastCash,ATM withdrawal,33225,credit
+2024-02-12,11:42,ACC002,FastCash,EMI debit,11539,credit
+2024-02-06,22:25,ACC001,FastCash,NEFT transfer,48500,credit
+2024-02-02,11:07,ACC003,Raj Kumar,EMI debit,311904,credit
+2024-02-22,02:12,ACC003,FastCash,NEFT transfer,33669,debit
+2024-02-04,15:08,ACC003,FastCash,NEFT transfer,329699,debit
+2024-03-21,15:51,ACC002,Sneha Traders,NEFT transfer,11379,credit
+2024-01-12,03:53,ACC001,Priya Ltd,Online purchase,341931,credit
+2024-03-06,22:17,ACC002,Priya Ltd,Online purchase,32621,debit
+2024-02-19,03:58,ACC001,Unknown Co,Online purchase,9946,credit
+2024-03-05,11:52,ACC003,Sneha Traders,EMI debit,20566,credit
+2024-01-20,14:34,ACC003,Sneha Traders,Online purchase,22786,credit
+2024-02-11,23:12,ACC003,FastCash,UPI payment,225202,credit
+2024-01-06,11:47,ACC002,Priya Ltd,Online purchase,25984,debit
+2024-01-17,15:37,ACC002,Raj Kumar,Salary credit,7577,credit
+2024-01-02,22:09,ACC001,FastCash,ATM withdrawal,11116,credit
+2024-03-20,22:25,ACC003,Sneha Traders,Online purchase,22532,credit
+2024-03-21,22:56,ACC001,Sneha Traders,NEFT transfer,48500,debit
+2024-03-21,22:58,ACC003,Raj Kumar,Online purchase,15908,debit
+2024-03-22,22:55,ACC003,Unknown Co,NEFT transfer,11902,debit
+2024-02-11,23:03,ACC002,Priya Ltd,UPI payment,25565,credit
+2024-03-13,22:50,ACC001,Sneha Traders,Online purchase,12473,debit
+2024-03-04,15:09,ACC002,Unknown Co,EMI debit,17644,debit
+2024-02-29,11:43,ACC002,Unknown Co,Salary credit,5840,credit
+2024-03-22,14:44,ACC001,FastCash,Online purchase,20799,debit
+2024-01-31,14:36,ACC003,Unknown Co,NEFT transfer,20390,credit
+2024-02-05,02:36,ACC003,FastCash,ATM withdrawal,49500,debit
+2024-03-18,23:22,ACC003,Unknown Co,EMI debit,13460,debit
+2024-03-21,02:57,ACC002,FastCash,NEFT transfer,3583,credit
+2024-01-17,02:58,ACC001,Priya Ltd,UPI payment,28230,credit
+2024-03-08,15:58,ACC002,FastCash,ATM withdrawal,11783,credit
+2024-01-15,14:04,ACC003,FastCash,Salary credit,15785,credit
+2024-01-12,23:25,ACC001,FastCash,ATM withdrawal,36164,credit
+2024-03-15,14:52,ACC001,Priya Ltd,Online purchase,25344,debit
+2024-03-20,15:20,ACC003,Raj Kumar,EMI debit,216060,credit
+2024-03-30,11:41,ACC001,Raj Kumar,ATM withdrawal,10160,credit
+2024-01-15,02:15,ACC002,FastCash,ATM withdrawal,49800,credit
+2024-03-16,22:46,ACC003,Raj Kumar,Online purchase,28189,credit
+2024-02-05,02:44,ACC002,Priya Ltd,ATM withdrawal,30057,debit
+2024-03-28,11:34,ACC002,Raj Kumar,Online purchase,438074,credit
+2024-01-25,02:54,ACC003,Priya Ltd,EMI debit,49500,debit
+2024-01-07,23:21,ACC003,Priya Ltd,NEFT transfer,9252,debit
+2024-03-16,03:52,ACC001,Sneha Traders,NEFT transfer,49900,credit
+2024-01-19,03:34,ACC001,Raj Kumar,UPI payment,12435,debit
+2024-02-15,23:50,ACC001,Priya Ltd,ATM withdrawal,22218,debit
+2024-01-17,22:26,ACC002,FastCash,ATM withdrawal,5165,debit
+2024-02-27,15:14,ACC003,Sneha Traders,ATM withdrawal,122735,credit
+2024-03-23,02:03,ACC002,Raj Kumar,Online purchase,310563,credit
+2024-01-10,02:20,ACC001,Unknown Co,Salary credit,5304,credit
+2024-02-18,15:33,ACC003,FastCash,NEFT transfer,34131,debit
+2024-03-24,22:56,ACC002,FastCash,UPI payment,49800,credit
+2024-02-13,23:29,ACC002,FastCash,ATM withdrawal,7231,credit
+2024-02-17,03:43,ACC001,Raj Kumar,NEFT transfer,135197,credit
+2024-01-13,22:47,ACC003,Raj Kumar,Salary credit,9527,credit
+2024-03-26,02:26,ACC003,Raj Kumar,ATM withdrawal,28717,credit
+2024-02-15,02:36,ACC003,FastCash,UPI payment,11140,debit
+2024-02-14,23:35,ACC003,Priya Ltd,Online purchase,19256,debit
+2024-03-18,22:53,ACC001,Unknown Co,EMI debit,2897,credit
+2024-02-13,11:00,ACC003,FastCash,NEFT transfer,10388,debit
+2024-03-22,02:05,ACC002,FastCash,Online purchase,49800,credit
+2024-01-21,11:19,ACC003,Raj Kumar,NEFT transfer,48500,debit
+2024-01-21,23:39,ACC002,FastCash,EMI debit,6346,credit
+2024-03-03,15:28,ACC003,Raj Kumar,ATM withdrawal,15127,credit
+2024-01-15,11:43,ACC003,Unknown Co,NEFT transfer,32891,debit
+2024-02-20,15:03,ACC001,Priya Ltd,ATM withdrawal,20753,credit
+2024-02-11,02:00,ACC001,Priya Ltd,Online purchase,29223,debit
+2024-03-05,15:53,ACC001,FastCash,EMI debit,24210,debit
+2024-02-25,02:29,ACC003,FastCash,Salary credit,264133,credit
+2024-03-31,22:26,ACC001,Unknown Co,UPI payment,27544,credit
+2024-03-29,11:05,ACC001,FastCash,Salary credit,7937,credit
+2024-03-08,02:25,ACC001,Unknown Co,UPI payment,49900,debit
+2024-03-06,22:07,ACC002,Unknown Co,EMI debit,13707,debit
+2024-01-31,02:09,ACC003,Priya Ltd,EMI debit,12370,debit
+2024-01-23,23:40,ACC003,FastCash,EMI debit,37944,credit
+2024-03-21,11:09,ACC002,Unknown Co,ATM withdrawal,31731,debit
+2024-02-15,15:04,ACC001,Raj Kumar,ATM withdrawal,30616,credit
+2024-01-10,22:55,ACC003,Sneha Traders,Salary credit,147341,credit
+2024-02-29,15:35,ACC001,FastCash,Salary credit,487407,debit
+2024-02-11,15:30,ACC002,Raj Kumar,ATM withdrawal,5054,debit
+2024-03-05,22:11,ACC002,Sneha Traders,Salary credit,29688,debit
+2024-02-16,11:58,ACC002,Sneha Traders,NEFT transfer,27789,credit
+2024-01-09,11:06,ACC002,Unknown Co,EMI debit,26333,debit
+2024-02-12,02:37,ACC002,FastCash,UPI payment,23925,debit
+2024-02-09,15:24,ACC001,Sneha Traders,NEFT transfer,22527,credit
+2024-03-06,11:01,ACC001,Unknown Co,Online purchase,12813,debit
+2024-01-29,03:09,ACC003,Sneha Traders,EMI debit,7628,debit
+2024-03-25,11:56,ACC003,FastCash,UPI payment,49800,debit
+2024-01-24,23:44,ACC003,FastCash,NEFT transfer,49800,credit
+2024-02-16,22:46,ACC003,Unknown Co,EMI debit,30111,credit
+2024-01-30,15:15,ACC001,Unknown Co,EMI debit,31737,credit
+2024-02-29,23:18,ACC003,FastCash,UPI payment,48500,debit

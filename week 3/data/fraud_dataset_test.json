@@ -1,0 +1,614 @@
+[
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "Three consecutive transfers totalling \u20b942,900 to FastCash within 2 hours from ACC001. Individual amounts: \u20b915,649, \u20b915,155, \u20b912,096.",
+    "output": "HIGH RISK \u2014 Layering pattern detected. Funds split across three rapid transfers to FastCash, a high-risk informal money transfer operator. Possible hawala activity.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "ATM withdrawal of \u20b949,388 at 03:02 from location flagged in prior fraud case. Account SB-4421.",
+    "output": "HIGH RISK \u2014 Cash withdrawal at 03:02 from a previously flagged ATM location. Immediate card block and branch notification recommended.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b948,591 NEFT transfer at 00:07 from SB-4421 to Unknown Co. Amount is \u20b91,409 below the \u20b950,000 reporting threshold.",
+    "output": "HIGH RISK \u2014 Classic structuring pattern. Amount deliberately kept \u20b91,409 below \u20b950,000 reporting threshold. Recommend immediate SAR filing and account freeze.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "EMI debit of \u20b922,000 from ACC002 to Priya Enterprises on scheduled date. Matches loan repayment schedule.",
+    "output": "LOW RISK \u2014 Scheduled EMI payment on due date. Matches loan account records. No action required.",
+    "risk_level": "LOW"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b949,610 sent to 'Unknown Co' via RTGS at 23:11 from ACC003. No prior transactions with this beneficiary.",
+    "output": "HIGH RISK \u2014 Transfer to 'Unknown Co', a vague beneficiary name commonly associated with money mules. No transaction history. Requires immediate KYC verification.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "EMI payment of \u20b948,407 to New Payee Ltd but no loan account found in system for CA-7890.",
+    "output": "MEDIUM RISK \u2014 EMI payment to unverified lender. No corresponding loan account on record. Could be legitimate external loan or unauthorized debit.",
+    "risk_level": "MEDIUM"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "Debit of \u20b949,399 to FastCash at 01:14. Third such transaction this week, all between \u20b948,000\u2013\u20b949,900.",
+    "output": "HIGH RISK \u2014 Repeated structuring. Multiple transactions just below threshold indicate systematic avoidance of reporting requirements. Classic smurfing pattern.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b948,440 sent to 'Unknown Co' via RTGS at 23:08 from SB-4421. No prior transactions with this beneficiary.",
+    "output": "HIGH RISK \u2014 Transfer to 'Unknown Co', a vague beneficiary name commonly associated with money mules. No transaction history. Requires immediate KYC verification.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b948,546 sent to 'Unknown Co' via RTGS at 03:50 from CA-7890. No prior transactions with this beneficiary.",
+    "output": "HIGH RISK \u2014 Transfer to 'Unknown Co', a vague beneficiary name commonly associated with money mules. No transaction history. Requires immediate KYC verification.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "Round number transaction: exactly \u20b9100,000 sent to New Payee Ltd via IMPS. Third round-number transaction this month.",
+    "output": "MEDIUM RISK \u2014 Round number bias (exactly \u20b9100,000) combined with repeated pattern suggests possible structured payments. Monitor beneficiary.",
+    "risk_level": "MEDIUM"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "UPI payment of \u20b9500,000 to RapidFunds at 23:48. Account ACC001 shows 12 transactions in last 6 hours.",
+    "output": "HIGH RISK \u2014 Extremely high transaction velocity (12 in 6 hours) combined with large late-night UPI payment. Likely account takeover or money mule activity.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "UPI payment of \u20b9150,000 to FastCash at 00:55. Account ACC003 shows 12 transactions in last 6 hours.",
+    "output": "HIGH RISK \u2014 Extremely high transaction velocity (12 in 6 hours) combined with large late-night UPI payment. Likely account takeover or money mule activity.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "EMI payment of \u20b949,827 to New Payee Ltd but no loan account found in system for CA-7890.",
+    "output": "MEDIUM RISK \u2014 EMI payment to unverified lender. No corresponding loan account on record. Could be legitimate external loan or unauthorized debit.",
+    "risk_level": "MEDIUM"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b9{amount} cash deposit followed immediately by \u20b9{amount2} NEFT transfer from {account} within 20 minutes.",
+    "output": "MEDIUM RISK \u2014 Cash deposit immediately followed by digital transfer suggests possible cash-to-digital conversion. Verify source of cash deposit.",
+    "risk_level": "MEDIUM"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b975,000 credited to CA-7890 at 12:00, then \u20b967,500 debited to RapidFunds at 12:45 (within 45 minutes).",
+    "output": "HIGH RISK \u2014 Rapid fund movement (credit then debit within 45 minutes) is a strong layering indicator. Funds are being passed through this account.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "ATM withdrawal of \u20b949,884 at 03:14 from location flagged in prior fraud case. Account ACC001.",
+    "output": "HIGH RISK \u2014 Cash withdrawal at 03:14 from a previously flagged ATM location. Immediate card block and branch notification recommended.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b92,778 ATM withdrawal at 17:04 from home branch. Within weekly withdrawal limit for ACC003.",
+    "output": "LOW RISK \u2014 ATM withdrawal within normal limits during business hours at home branch. No suspicious indicators.",
+    "risk_level": "LOW"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "UPI payment of \u20b93,403 from CA-7890 to Amazon India at 09:10. Described as grocery purchase.",
+    "output": "LOW RISK \u2014 Small retail UPI payment during business hours to a known merchant. Normal consumer behavior.",
+    "risk_level": "LOW"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "NEFT transfer of \u20b949,145 from ACC001 to HDFC Bank EMI. Regular monthly transfer, consistent for 18 months.",
+    "output": "LOW RISK \u2014 Recurring monthly NEFT to established beneficiary. 18-month consistent pattern. No action required.",
+    "risk_level": "LOW"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "ATM withdrawal of \u20b949,309 at 01:35 from location flagged in prior fraud case. Account ACC002.",
+    "output": "HIGH RISK \u2014 Cash withdrawal at 01:35 from a previously flagged ATM location. Immediate card block and branch notification recommended.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "NEFT transfer of \u20b948,305 from SB-4421 to HDFC Bank EMI. Regular monthly transfer, consistent for 18 months.",
+    "output": "LOW RISK \u2014 Recurring monthly NEFT to established beneficiary. 18-month consistent pattern. No action required.",
+    "risk_level": "LOW"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "Salary credit of \u20b985,000 to SB-4421 from employer Amazon India on 2024-01-20. Consistent with last 6 months.",
+    "output": "LOW RISK \u2014 Regular salary credit from known employer. Amount consistent with historical pattern. No action required.",
+    "risk_level": "LOW"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "Online purchase of \u20b948,560 from Raj Kumar at 10:16. Merchant is registered e-commerce platform.",
+    "output": "LOW RISK \u2014 E-commerce purchase from registered merchant. Amount within normal spending range. No action required.",
+    "risk_level": "LOW"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "UPI payment of \u20b9751 from CA-7890 to Raj Kumar at 10:37. Described as grocery purchase.",
+    "output": "LOW RISK \u2014 Small retail UPI payment during business hours to a known merchant. Normal consumer behavior.",
+    "risk_level": "LOW"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b948,132 NEFT transfer at 02:28 from ACC002 to CashXpress. Amount is \u20b91,868 below the \u20b950,000 reporting threshold.",
+    "output": "HIGH RISK \u2014 Classic structuring pattern. Amount deliberately kept \u20b91,868 below \u20b950,000 reporting threshold. Recommend immediate SAR filing and account freeze.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b9931 ATM withdrawal at 13:58 from home branch. Within weekly withdrawal limit for SB-4421.",
+    "output": "LOW RISK \u2014 ATM withdrawal within normal limits during business hours at home branch. No suspicious indicators.",
+    "risk_level": "LOW"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b948,759 NEFT transfer at 00:11 from ACC001 to QuickPay Ltd. Amount is \u20b91,241 below the \u20b950,000 reporting threshold.",
+    "output": "HIGH RISK \u2014 Classic structuring pattern. Amount deliberately kept \u20b91,241 below \u20b950,000 reporting threshold. Recommend immediate SAR filing and account freeze.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "5 UPI transactions from ACC003 totalling \u20b946,267 in the last 3 hours. Usual daily average is 2 transactions.",
+    "output": "MEDIUM RISK \u2014 Transaction velocity elevated (5 in 3 hours vs daily avg of 2). Could be legitimate bulk payments but warrants automated monitoring.",
+    "risk_level": "MEDIUM"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "ATM withdrawal of \u20b948,128 at 23:03 from location flagged in prior fraud case. Account ACC002.",
+    "output": "HIGH RISK \u2014 Cash withdrawal at 23:03 from a previously flagged ATM location. Immediate card block and branch notification recommended.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "Online purchase of \u20b949,786 from TechCorp Salary at 10:43. Merchant is registered e-commerce platform.",
+    "output": "LOW RISK \u2014 E-commerce purchase from registered merchant. Amount within normal spending range. No action required.",
+    "risk_level": "LOW"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b949,724 NEFT to FirstTime Co at 21:49. Beneficiary added to SB-4421 yesterday.",
+    "output": "MEDIUM RISK \u2014 Transaction to a recently added beneficiary. While the amount and time are within normal range, new payee warrants monitoring for the next 30 days.",
+    "risk_level": "MEDIUM"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b948,441 sent to 'Unknown Co' via RTGS at 23:50 from ACC002. No prior transactions with this beneficiary.",
+    "output": "HIGH RISK \u2014 Transfer to 'Unknown Co', a vague beneficiary name commonly associated with money mules. No transaction history. Requires immediate KYC verification.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b9622 ATM withdrawal at 09:32 from home branch. Within weekly withdrawal limit for ACC002.",
+    "output": "LOW RISK \u2014 ATM withdrawal within normal limits during business hours at home branch. No suspicious indicators.",
+    "risk_level": "LOW"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "UPI payment of \u20b92,534 from ACC002 to TechCorp Salary at 12:10. Described as grocery purchase.",
+    "output": "LOW RISK \u2014 Small retail UPI payment during business hours to a known merchant. Normal consumer behavior.",
+    "risk_level": "LOW"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "ATM withdrawal of \u20b949,214 at 23:00 from location flagged in prior fraud case. Account ACC002.",
+    "output": "HIGH RISK \u2014 Cash withdrawal at 23:00 from a previously flagged ATM location. Immediate card block and branch notification recommended.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b949,613 NEFT transfer at 23:15 from SB-4421 to Unknown Co. Amount is \u20b9387 below the \u20b950,000 reporting threshold.",
+    "output": "HIGH RISK \u2014 Classic structuring pattern. Amount deliberately kept \u20b9387 below \u20b950,000 reporting threshold. Recommend immediate SAR filing and account freeze.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "Salary credit of \u20b985,000 to ACC003 from employer TechCorp Salary on 2024-01-04. Consistent with last 6 months.",
+    "output": "LOW RISK \u2014 Regular salary credit from known employer. Amount consistent with historical pattern. No action required.",
+    "risk_level": "LOW"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b9200,000 credited to SB-4421 at 10:00, then \u20b9180,000 debited to CashXpress at 10:45 (within 45 minutes).",
+    "output": "HIGH RISK \u2014 Rapid fund movement (credit then debit within 45 minutes) is a strong layering indicator. Funds are being passed through this account.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b93,394 ATM withdrawal at 14:21 from home branch. Within weekly withdrawal limit for ACC003.",
+    "output": "LOW RISK \u2014 ATM withdrawal within normal limits during business hours at home branch. No suspicious indicators.",
+    "risk_level": "LOW"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b949,806 transferred to FirstTime Co at 03:55. First transaction from ACC001 at this hour.",
+    "output": "MEDIUM RISK \u2014 Late evening transaction (03:55) is unusual for this account which has no prior transactions after 9pm. Monitor for pattern repetition.",
+    "risk_level": "MEDIUM"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "Round number transaction: exactly \u20b9100,000 sent to FirstTime Co via IMPS. Third round-number transaction this month.",
+    "output": "MEDIUM RISK \u2014 Round number bias (exactly \u20b9100,000) combined with repeated pattern suggests possible structured payments. Monitor beneficiary.",
+    "risk_level": "MEDIUM"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "Online purchase of \u20b948,518 from Amazon India at 10:36. Merchant is registered e-commerce platform.",
+    "output": "LOW RISK \u2014 E-commerce purchase from registered merchant. Amount within normal spending range. No action required.",
+    "risk_level": "LOW"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b949,662 transferred to New Payee Ltd at 02:57. First transaction from SB-4421 at this hour.",
+    "output": "MEDIUM RISK \u2014 Late evening transaction (02:57) is unusual for this account which has no prior transactions after 9pm. Monitor for pattern repetition.",
+    "risk_level": "MEDIUM"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b948,109 NEFT transfer at 00:42 from ACC003 to QuickPay Ltd. Amount is \u20b91,891 below the \u20b950,000 reporting threshold.",
+    "output": "HIGH RISK \u2014 Classic structuring pattern. Amount deliberately kept \u20b91,891 below \u20b950,000 reporting threshold. Recommend immediate SAR filing and account freeze.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "Online purchase of \u20b949,764 from Raj Kumar at 13:31. Merchant is registered e-commerce platform.",
+    "output": "LOW RISK \u2014 E-commerce purchase from registered merchant. Amount within normal spending range. No action required.",
+    "risk_level": "LOW"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b9443 ATM withdrawal at 16:31 from home branch. Within weekly withdrawal limit for ACC003.",
+    "output": "LOW RISK \u2014 ATM withdrawal within normal limits during business hours at home branch. No suspicious indicators.",
+    "risk_level": "LOW"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "Round number transaction: exactly \u20b910,000 sent to EasyLoan via IMPS. Third round-number transaction this month.",
+    "output": "MEDIUM RISK \u2014 Round number bias (exactly \u20b910,000) combined with repeated pattern suggests possible structured payments. Monitor beneficiary.",
+    "risk_level": "MEDIUM"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b9200,000 transfer at 01:57 to newly added beneficiary FastCash. Beneficiary added 8 minutes before transfer.",
+    "output": "HIGH RISK \u2014 Large amount transferred at 01:57 to a beneficiary added just 8 minutes prior. High-risk combination: late night + new payee + large amount.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "ATM withdrawal of \u20b948,760 at 23:08 from location flagged in prior fraud case. Account ACC003.",
+    "output": "HIGH RISK \u2014 Cash withdrawal at 23:08 from a previously flagged ATM location. Immediate card block and branch notification recommended.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "Debit of \u20b948,677 to RapidFunds at 03:40. Third such transaction this week, all between \u20b948,000\u2013\u20b949,900.",
+    "output": "HIGH RISK \u2014 Repeated structuring. Multiple transactions just below threshold indicate systematic avoidance of reporting requirements. Classic smurfing pattern.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "Debit of \u20b948,182 to Unknown Co at 01:59. Third such transaction this week, all between \u20b948,000\u2013\u20b949,900.",
+    "output": "HIGH RISK \u2014 Repeated structuring. Multiple transactions just below threshold indicate systematic avoidance of reporting requirements. Classic smurfing pattern.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "UPI payment of \u20b91,441 from ACC003 to Priya Enterprises at 15:23. Described as grocery purchase.",
+    "output": "LOW RISK \u2014 Small retail UPI payment during business hours to a known merchant. Normal consumer behavior.",
+    "risk_level": "LOW"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "Salary credit of \u20b942,000 to SB-4421 from employer HDFC Bank EMI on 2024-01-23. Consistent with last 6 months.",
+    "output": "LOW RISK \u2014 Regular salary credit from known employer. Amount consistent with historical pattern. No action required.",
+    "risk_level": "LOW"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b948,974 transferred to Unverified Services at 03:30. First transaction from CA-7890 at this hour.",
+    "output": "MEDIUM RISK \u2014 Late evening transaction (03:30) is unusual for this account which has no prior transactions after 9pm. Monitor for pattern repetition.",
+    "risk_level": "MEDIUM"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "Round number transaction: exactly \u20b950,000 sent to New Payee Ltd via IMPS. Third round-number transaction this month.",
+    "output": "MEDIUM RISK \u2014 Round number bias (exactly \u20b950,000) combined with repeated pattern suggests possible structured payments. Monitor beneficiary.",
+    "risk_level": "MEDIUM"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b92,486 ATM withdrawal at 12:37 from home branch. Within weekly withdrawal limit for CA-7890.",
+    "output": "LOW RISK \u2014 ATM withdrawal within normal limits during business hours at home branch. No suspicious indicators.",
+    "risk_level": "LOW"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "Salary credit of \u20b955,000 to ACC002 from employer TechCorp Salary on 2024-03-05. Consistent with last 6 months.",
+    "output": "LOW RISK \u2014 Regular salary credit from known employer. Amount consistent with historical pattern. No action required.",
+    "risk_level": "LOW"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b9100,000 transfer at 02:35 to newly added beneficiary QuickPay Ltd. Beneficiary added 8 minutes before transfer.",
+    "output": "HIGH RISK \u2014 Large amount transferred at 02:35 to a beneficiary added just 8 minutes prior. High-risk combination: late night + new payee + large amount.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b948,660 transferred to EasyLoan at 02:40. First transaction from ACC001 at this hour.",
+    "output": "MEDIUM RISK \u2014 Late evening transaction (02:40) is unusual for this account which has no prior transactions after 9pm. Monitor for pattern repetition.",
+    "risk_level": "MEDIUM"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "ATM withdrawal of \u20b948,138 at 01:38 from location flagged in prior fraud case. Account SB-4421.",
+    "output": "HIGH RISK \u2014 Cash withdrawal at 01:38 from a previously flagged ATM location. Immediate card block and branch notification recommended.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "Round number transaction: exactly \u20b9100,000 sent to New Payee Ltd via IMPS. Third round-number transaction this month.",
+    "output": "MEDIUM RISK \u2014 Round number bias (exactly \u20b9100,000) combined with repeated pattern suggests possible structured payments. Monitor beneficiary.",
+    "risk_level": "MEDIUM"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b9100,000 credited to CA-7890 at 12:00, then \u20b990,000 debited to QuickPay Ltd at 12:45 (within 45 minutes).",
+    "output": "HIGH RISK \u2014 Rapid fund movement (credit then debit within 45 minutes) is a strong layering indicator. Funds are being passed through this account.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b9200,000 credited to CA-7890 at 13:00, then \u20b9180,000 debited to RapidFunds at 13:45 (within 45 minutes).",
+    "output": "HIGH RISK \u2014 Rapid fund movement (credit then debit within 45 minutes) is a strong layering indicator. Funds are being passed through this account.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b949,543 NEFT transfer at 23:43 from ACC003 to FastCash. Amount is \u20b9457 below the \u20b950,000 reporting threshold.",
+    "output": "HIGH RISK \u2014 Classic structuring pattern. Amount deliberately kept \u20b9457 below \u20b950,000 reporting threshold. Recommend immediate SAR filing and account freeze.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "EMI payment of \u20b948,914 to Unverified Services but no loan account found in system for ACC001.",
+    "output": "MEDIUM RISK \u2014 EMI payment to unverified lender. No corresponding loan account on record. Could be legitimate external loan or unauthorized debit.",
+    "risk_level": "MEDIUM"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b949,877 transferred to New Payee Ltd at 23:52. First transaction from ACC002 at this hour.",
+    "output": "MEDIUM RISK \u2014 Late evening transaction (23:52) is unusual for this account which has no prior transactions after 9pm. Monitor for pattern repetition.",
+    "risk_level": "MEDIUM"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "Debit of \u20b948,528 to QuickPay Ltd at 03:03. Third such transaction this week, all between \u20b948,000\u2013\u20b949,900.",
+    "output": "HIGH RISK \u2014 Repeated structuring. Multiple transactions just below threshold indicate systematic avoidance of reporting requirements. Classic smurfing pattern.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b9150,000 credited to SB-4421 at 10:00, then \u20b9135,000 debited to RapidFunds at 10:45 (within 45 minutes).",
+    "output": "HIGH RISK \u2014 Rapid fund movement (credit then debit within 45 minutes) is a strong layering indicator. Funds are being passed through this account.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "Debit of \u20b948,417 to QuickPay Ltd at 00:12. Third such transaction this week, all between \u20b948,000\u2013\u20b949,900.",
+    "output": "HIGH RISK \u2014 Repeated structuring. Multiple transactions just below threshold indicate systematic avoidance of reporting requirements. Classic smurfing pattern.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "EMI payment of \u20b948,971 to New Payee Ltd but no loan account found in system for CA-7890.",
+    "output": "MEDIUM RISK \u2014 EMI payment to unverified lender. No corresponding loan account on record. Could be legitimate external loan or unauthorized debit.",
+    "risk_level": "MEDIUM"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "Three consecutive transfers totalling \u20b949,899 to FastCash within 2 hours from ACC001. Individual amounts: \u20b918,133, \u20b918,674, \u20b913,092.",
+    "output": "HIGH RISK \u2014 Layering pattern detected. Funds split across three rapid transfers to FastCash, a high-risk informal money transfer operator. Possible hawala activity.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "EMI debit of \u20b912,000 from ACC003 to HDFC Bank EMI on scheduled date. Matches loan repayment schedule.",
+    "output": "LOW RISK \u2014 Scheduled EMI payment on due date. Matches loan account records. No action required.",
+    "risk_level": "LOW"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b9{amount} cash deposit followed immediately by \u20b9{amount2} NEFT transfer from {account} within 20 minutes.",
+    "output": "MEDIUM RISK \u2014 Cash deposit immediately followed by digital transfer suggests possible cash-to-digital conversion. Verify source of cash deposit.",
+    "risk_level": "MEDIUM"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "NEFT transfer of \u20b948,874 from SB-4421 to Priya Enterprises. Regular monthly transfer, consistent for 18 months.",
+    "output": "LOW RISK \u2014 Recurring monthly NEFT to established beneficiary. 18-month consistent pattern. No action required.",
+    "risk_level": "LOW"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "Three consecutive transfers totalling \u20b947,928 to FastCash within 2 hours from SB-4421. Individual amounts: \u20b919,326, \u20b917,963, \u20b910,639.",
+    "output": "HIGH RISK \u2014 Layering pattern detected. Funds split across three rapid transfers to FastCash, a high-risk informal money transfer operator. Possible hawala activity.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b948,240 sent to 'Unknown Co' via RTGS at 02:55 from ACC003. No prior transactions with this beneficiary.",
+    "output": "HIGH RISK \u2014 Transfer to 'Unknown Co', a vague beneficiary name commonly associated with money mules. No transaction history. Requires immediate KYC verification.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b9150,000 transfer at 23:53 to newly added beneficiary CashXpress. Beneficiary added 8 minutes before transfer.",
+    "output": "HIGH RISK \u2014 Large amount transferred at 23:53 to a beneficiary added just 8 minutes prior. High-risk combination: late night + new payee + large amount.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "Online purchase of \u20b949,650 from TechCorp Salary at 16:00. Merchant is registered e-commerce platform.",
+    "output": "LOW RISK \u2014 E-commerce purchase from registered merchant. Amount within normal spending range. No action required.",
+    "risk_level": "LOW"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "UPI payment of \u20b92,039 from CA-7890 to Amazon India at 13:31. Described as grocery purchase.",
+    "output": "LOW RISK \u2014 Small retail UPI payment during business hours to a known merchant. Normal consumer behavior.",
+    "risk_level": "LOW"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "Round number transaction: exactly \u20b9100,000 sent to New Payee Ltd via IMPS. Third round-number transaction this month.",
+    "output": "MEDIUM RISK \u2014 Round number bias (exactly \u20b9100,000) combined with repeated pattern suggests possible structured payments. Monitor beneficiary.",
+    "risk_level": "MEDIUM"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "Debit of \u20b949,755 to QuickPay Ltd at 03:35. Third such transaction this week, all between \u20b948,000\u2013\u20b949,900.",
+    "output": "HIGH RISK \u2014 Repeated structuring. Multiple transactions just below threshold indicate systematic avoidance of reporting requirements. Classic smurfing pattern.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "NEFT transfer of \u20b948,941 from ACC002 to Priya Enterprises. Regular monthly transfer, consistent for 18 months.",
+    "output": "LOW RISK \u2014 Recurring monthly NEFT to established beneficiary. 18-month consistent pattern. No action required.",
+    "risk_level": "LOW"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "ATM withdrawal of \u20b949,770 at 23:09 from location flagged in prior fraud case. Account ACC001.",
+    "output": "HIGH RISK \u2014 Cash withdrawal at 23:09 from a previously flagged ATM location. Immediate card block and branch notification recommended.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "Salary credit of \u20b935,000 to ACC002 from employer TechCorp Salary on 2024-03-24. Consistent with last 6 months.",
+    "output": "LOW RISK \u2014 Regular salary credit from known employer. Amount consistent with historical pattern. No action required.",
+    "risk_level": "LOW"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b948,564 transferred to FirstTime Co at 02:59. First transaction from ACC003 at this hour.",
+    "output": "MEDIUM RISK \u2014 Late evening transaction (02:59) is unusual for this account which has no prior transactions after 9pm. Monitor for pattern repetition.",
+    "risk_level": "MEDIUM"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "EMI payment of \u20b949,898 to EasyLoan but no loan account found in system for ACC001.",
+    "output": "MEDIUM RISK \u2014 EMI payment to unverified lender. No corresponding loan account on record. Could be legitimate external loan or unauthorized debit.",
+    "risk_level": "MEDIUM"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b9200,000 transfer at 01:59 to newly added beneficiary Unknown Co. Beneficiary added 8 minutes before transfer.",
+    "output": "HIGH RISK \u2014 Large amount transferred at 01:59 to a beneficiary added just 8 minutes prior. High-risk combination: late night + new payee + large amount.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "UPI payment of \u20b94,456 from SB-4421 to TechCorp Salary at 09:55. Described as grocery purchase.",
+    "output": "LOW RISK \u2014 Small retail UPI payment during business hours to a known merchant. Normal consumer behavior.",
+    "risk_level": "LOW"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "EMI payment of \u20b948,743 to New Payee Ltd but no loan account found in system for ACC003.",
+    "output": "MEDIUM RISK \u2014 EMI payment to unverified lender. No corresponding loan account on record. Could be legitimate external loan or unauthorized debit.",
+    "risk_level": "MEDIUM"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "5 UPI transactions from CA-7890 totalling \u20b943,401 in the last 3 hours. Usual daily average is 2 transactions.",
+    "output": "MEDIUM RISK \u2014 Transaction velocity elevated (5 in 3 hours vs daily avg of 2). Could be legitimate bulk payments but warrants automated monitoring.",
+    "risk_level": "MEDIUM"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b949,702 NEFT to EasyLoan at 21:52. Beneficiary added to ACC003 yesterday.",
+    "output": "MEDIUM RISK \u2014 Transaction to a recently added beneficiary. While the amount and time are within normal range, new payee warrants monitoring for the next 30 days.",
+    "risk_level": "MEDIUM"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "Round number transaction: exactly \u20b9100,000 sent to FirstTime Co via IMPS. Third round-number transaction this month.",
+    "output": "MEDIUM RISK \u2014 Round number bias (exactly \u20b9100,000) combined with repeated pattern suggests possible structured payments. Monitor beneficiary.",
+    "risk_level": "MEDIUM"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b949,236 transferred to New Payee Ltd at 02:36. First transaction from ACC001 at this hour.",
+    "output": "MEDIUM RISK \u2014 Late evening transaction (02:36) is unusual for this account which has no prior transactions after 9pm. Monitor for pattern repetition.",
+    "risk_level": "MEDIUM"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "Online purchase of \u20b948,518 from Amazon India at 17:37. Merchant is registered e-commerce platform.",
+    "output": "LOW RISK \u2014 E-commerce purchase from registered merchant. Amount within normal spending range. No action required.",
+    "risk_level": "LOW"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b949,762 transferred to EasyLoan at 02:58. First transaction from CA-7890 at this hour.",
+    "output": "MEDIUM RISK \u2014 Late evening transaction (02:58) is unusual for this account which has no prior transactions after 9pm. Monitor for pattern repetition.",
+    "risk_level": "MEDIUM"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b9100,000 transfer at 00:16 to newly added beneficiary FastCash. Beneficiary added 8 minutes before transfer.",
+    "output": "HIGH RISK \u2014 Large amount transferred at 00:16 to a beneficiary added just 8 minutes prior. High-risk combination: late night + new payee + large amount.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "EMI payment of \u20b949,875 to FirstTime Co but no loan account found in system for CA-7890.",
+    "output": "MEDIUM RISK \u2014 EMI payment to unverified lender. No corresponding loan account on record. Could be legitimate external loan or unauthorized debit.",
+    "risk_level": "MEDIUM"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "Three consecutive transfers totalling \u20b947,096 to FastCash within 2 hours from ACC002. Individual amounts: \u20b916,624, \u20b915,622, \u20b914,850.",
+    "output": "HIGH RISK \u2014 Layering pattern detected. Funds split across three rapid transfers to FastCash, a high-risk informal money transfer operator. Possible hawala activity.",
+    "risk_level": "HIGH"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b948,704 NEFT to Unverified Services at 21:39. Beneficiary added to ACC002 yesterday.",
+    "output": "MEDIUM RISK \u2014 Transaction to a recently added beneficiary. While the amount and time are within normal range, new payee warrants monitoring for the next 30 days.",
+    "risk_level": "MEDIUM"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "Salary credit of \u20b985,000 to ACC001 from employer Priya Enterprises on 2024-03-31. Consistent with last 6 months.",
+    "output": "LOW RISK \u2014 Regular salary credit from known employer. Amount consistent with historical pattern. No action required.",
+    "risk_level": "LOW"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "\u20b94,498 ATM withdrawal at 11:59 from home branch. Within weekly withdrawal limit for ACC003.",
+    "output": "LOW RISK \u2014 ATM withdrawal within normal limits during business hours at home branch. No suspicious indicators.",
+    "risk_level": "LOW"
+  },
+  {
+    "instruction": "You are a financial fraud analyst. Classify this transaction for fraud risk and explain your reasoning.",
+    "input": "Salary credit of \u20b935,000 to SB-4421 from employer TechCorp Salary on 2024-03-18. Consistent with last 6 months.",
+    "output": "LOW RISK \u2014 Regular salary credit from known employer. Amount consistent with historical pattern. No action required.",
+    "risk_level": "LOW"
+  }
+]

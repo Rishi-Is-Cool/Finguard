@@ -1,0 +1,61 @@
+name: week4-ci
+
+on:
+  push:
+    paths: ["week 4/**", ".github/workflows/week4-ci.yml"]
+  pull_request:
+    paths: ["week 4/**", ".github/workflows/week4-ci.yml"]
+
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: week 4
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: week 4/backend/requirements.txt
+      - name: Install
+        run: |
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -r backend/requirements.txt -r backend/requirements-dev.txt
+      - name: Test
+        run: python -m pytest
+
+  frontend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: week 4/frontend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: week 4/frontend/package-lock.json
+      - run: npm ci
+      - run: npm run build
+
+  docker:
+    # The deployable artifact: build the image and prove it boots and serves.
+    runs-on: ubuntu-latest
+    needs: [backend, frontend]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build image
+        run: docker build -t finguard "week 4"
+      - name: Smoke test
+        run: |
+          docker run -d --name fg -p 7860:7860 finguard
+          for i in $(seq 1 60); do curl -sf localhost:7860/api/health && break; sleep 2; done
+          curl -sf localhost:7860/api/health | grep -q '"status":"ok"'
+          curl -sf localhost:7860/ | grep -q '<div id="root">'
+          curl -sf -X POST localhost:7860/api/upload/sample | grep -q '"row_count":200'
+      - name: Container logs
+        if: always()
+        run: docker logs fg || true
